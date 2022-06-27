@@ -1,11 +1,21 @@
 import { useState } from "react";
 import { Wizard, useWizard } from "react-use-wizard";
-
+import axios from "axios";
 const Memoiremimoucha = () => {
   const [name, setName] = useState("");
   const [toEat, setToEat] = useState("");
   const [toDrink, setToDrink] = useState("");
-
+  const submit = () => {
+    console.log(name, toEat, toDrink);
+    axios.post("https://flyp-automation.herokuapp.com/contact/add", {
+      firstName: name,
+      toEat,
+      toDrink,
+    });
+  };
+  function handleInput(event) {
+    setName(event.target.value);
+  }
   const Step1 = () => {
     const { nextStep } = useWizard();
     return (
@@ -56,9 +66,9 @@ const Memoiremimoucha = () => {
           <h1 className="title">Identifiez-vous </h1>
           <input
             className="input-mimoucha"
-            type="text"
-            name="name"
             placeholder="nom et prénom"
+            value={name}
+            onChange={handleInput}
           />
         </div>
         <img src="https://i.ibb.co/MR9W8W1/backg2.png" className="img1-cake" />
@@ -185,7 +195,15 @@ const Memoiremimoucha = () => {
           </div>
         </div>
         <div className="btn-validation">
-          <button onClick={() => nextStep()}> Valider la commande</button>
+          <button
+            onClick={() => {
+              nextStep();
+              submit();
+            }}
+          >
+            {" "}
+            Valider la commande
+          </button>
         </div>
         <div className="dots-container">
           <span style={{ cursor: "pointer" }} onClick={() => goToStep(0)} />
