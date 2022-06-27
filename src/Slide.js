@@ -47,6 +47,7 @@ const Memoiremimoucha = () => {
           <span />
           <span />
         </div>
+        <div className="footer-line" />
       </section>
     );
   };
@@ -66,6 +67,7 @@ const Memoiremimoucha = () => {
           <h1 className="title">Identifiez-vous </h1>
           <input
             className="input-mimoucha"
+            type="text"
             placeholder="nom et prénom"
             value={name}
             onChange={handleInput}
@@ -87,6 +89,7 @@ const Memoiremimoucha = () => {
           <span />
           <span />
         </div>
+        <div className="footer-line" />
       </section>
     );
   };
@@ -151,6 +154,7 @@ const Memoiremimoucha = () => {
           <span />
           <span />
         </div>
+        <div className="footer-line" />
       </section>
     );
   };
@@ -212,6 +216,7 @@ const Memoiremimoucha = () => {
           <span id="actif" />
           <span />
         </div>
+        <div className="footer-line" />
       </section>
     );
   };
@@ -219,22 +224,24 @@ const Memoiremimoucha = () => {
   const Step5 = () => {
     return (
       <section className="components-mimoucha" id="commande-validée">
-        <div className="notification">
-          <div className="message">
+        <div className="notif-container">
+          <div className="left-side">
             <span>Commande Validée</span>
           </div>
-          <img
-            className="panier"
-            src="https://i.ibb.co/yVBZ7bm/Shopping-cart-backg5.png"
-          />
-          <span className="number">
-            {" "}
-            {toEat && toDrink
-              ? 2
-              : (!toEat && toDrink) || (toEat && !toDrink)
-              ? 1
-              : 0}{" "}
-          </span>
+          <div className="right-side">
+            <img
+              className="panier"
+              src="https://i.ibb.co/yVBZ7bm/Shopping-cart-backg5.png"
+            />
+            <span className="number">
+              {" "}
+              {toEat && toDrink
+                ? 2
+                : (!toEat && toDrink) || (toEat && !toDrink)
+                ? 1
+                : 0}{" "}
+            </span>
+          </div>
         </div>
         <img
           className="delivery"

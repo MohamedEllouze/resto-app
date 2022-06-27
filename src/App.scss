@@ -1,45 +1,7 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 .components-mimoucha {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   padding: 20vh 0;
   margin-left: auto;
   margin-right: auto;
@@ -71,7 +33,9 @@
   .card-mimoucha {
       width: 321px;
       height: 215px;
-      margin: 27px;
+      margin-top: 27px;
+      margin-left: auto;
+      margin-right: auto;
       background: rgba(255, 255, 255, 0.6);
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       border-radius: 30px;
@@ -197,6 +161,12 @@
           letter-spacing: -0.015em;
       }
   }
+  .welcome-bg-img{
+      position: absolute;
+      right: 0;
+      top: 28.79%;
+      bottom: 34.22%;
+  }
   .arrows-container .text {
       font-family: "Poppins";
       font-style: normal;
@@ -210,6 +180,7 @@
 }
 #identifiez-vous {
   position: relative;
+  height: 60vh;
   .img1-cake {
       position: absolute;
       right: 60.7%;
@@ -234,6 +205,7 @@
 }
 #que-preferez-vous {
   padding: 10vh 0;
+  height: 80vh;
   .btn-validation {
       margin: 8vh auto;
       width: 205px;
@@ -258,49 +230,69 @@
 #commande-validée {
   background-image: url("https://i.ibb.co/x1kXK3x/backg-1-5.png");
   position: relative;
-  padding: 0;
-  .notification {
+  padding: 10vh 0;
+  .notif-container{
+      width:314px;
+height:60px;
       background: rgba(255, 249, 240, 0.3);
       box-shadow: 0px 12px 40px -16px rgba(0, 0, 0, 0.1);
       border-radius: 30px;
-      .message {
-          position: absolute;
-          left: 17.87%;
-          right: 33.33%;
-          top: 15.14%;
-          bottom: 82.31%;
-          font-family: "Poppins";
-          font-style: normal;
-          font-weight: 600;
-          font-size: 17px;
-          line-height: 94.8%;
-      }
-      .panier {
-          position: absolute;
-          left: 77.33%;
-          right: 17.33%;
-          top: 15.29%;
-          bottom: 81.71%;
-      }
-      .number {
-          position: absolute;
-          left: 82.67%;
-          right: 12.8%;
-          top: 13.04%;
-          bottom: 84.41%;
-          background: #ec2633;
-          box-shadow: 0px 2px 23px 1px rgba(255, 51, 52, 0.72);
-          border-radius: 50%;
-          color: white;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .left-side{
+          width: 75%;
           text-align: center;
+span{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 94.8%;    
+  
+  color: #000000;
+}
       }
+.right-side{
+
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  border-left: 1px solid rgba(148, 140, 140, 0.31);
+  height: 75%;
+  .panier{
+      width: 16.67px;
+      height: 16.67px;
+      margin-top: auto;
+      margin-bottom: auto;
+}
+.number{
+  color: white;
+  background: #EC2633;
+  box-shadow: 0px 2px 23px 1px rgb(255 51 52 / 72%);
+  width: 17px;
+  height: 17px;
+  text-align: center;
+  border-radius: 17px;
+}
+}
   }
+
+
   .delivery {
       position: absolute;
-      width: 253px;
-      height: 211.17px;
-      left: 46px;
-      top: 221px;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  width: 80vw;
+  margin-right: auto;
+  right: 0;
+  left: 0;
+
   }
   .thank-u {
       position: absolute;
