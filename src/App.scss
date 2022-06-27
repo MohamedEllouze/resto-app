@@ -1,0 +1,319 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.components-mimoucha {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  padding: 20vh 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("https://i.ibb.co/XW08yQP/backg-2-3-4.png");
+  background-size: cover;
+  .arrows-container {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 27px;
+      align-items: center;
+      .prev,
+      .next {
+          font-size: 36px;
+          cursor: pointer;
+      }
+      span {
+          caret-color: transparent;
+          font-size: 15px;
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 23px;
+          line-height: 40px;
+          text-align: center;
+          letter-spacing: -0.015em;
+          color: #000000;
+      }
+  }
+  .card-mimoucha {
+      width: 321px;
+      height: 215px;
+      margin: 27px;
+      background: rgba(255, 255, 255, 0.6);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 30px;
+      .title {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 40px;
+          text-align: center;
+          letter-spacing: -0.015em;
+          color: #000000;
+          padding: 25px 0;
+      }
+      .input-mimoucha {
+          display: block;
+          background: rgba(255, 255, 255, 0.8);
+          box-shadow: 0px 12px 40px -16px rgba(0, 0, 0, 0.1);
+          border-radius: 30px;
+          width: 264px;
+          height: 50.45px;
+          border: 0;
+          margin-left: auto;
+          margin-right: auto;
+      }
+      .input-mimoucha,
+      .input-mimoucha::placeholder {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 300;
+          font-size: 15px;
+          line-height: 94.8%;
+          color: rgba(0, 0, 0, 0.8);
+          text-align: center;
+      }
+  }
+  .btn-with-image {
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25));
+      backdrop-filter: blur(60px);
+      border-radius: 10px;
+      width: 168px;
+      height: 119px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 4vh auto;
+      cursor: pointer;
+      .bg-img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          position: absolute;
+          border-radius: 10px;
+          z-index: -1;
+      }
+      .btn-title {
+          background: rgba(255, 255, 255, 0.8);
+          border-radius: 30px;
+          width: 146px;
+          height: 33px;
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 17px;
+          line-height: 32px;
+          text-align: center;
+          letter-spacing: -0.015em;
+          color: rgba(0, 0, 0, 0.7);
+      }
+  }
+  .dots-container {
+      position: absolute;
+      top: 89.96%;
+      bottom: 3.75%;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      span {
+          caret-color: transparent;
+          background-color: #817f7f;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          margin: 5px;
+      }
+      #actif {
+          background-color: #000000;
+      }
+  }
+  .footer-line {
+      width: 135px;
+      height: 5px;
+      position: absolute;
+      left: 32%;
+      right: 32%;
+      top: 95.05%;
+      bottom: 4.2%;
+      background: #141313;
+      border-radius: 10px;
+  }
+}
+#home {
+  background-image: url("https://i.ibb.co/x1kXK3x/backg-1-5.png");
+  background-size: cover;
+  padding: 5vh 0;
+  .welcome {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+      span {
+          caret-color: transparent;
+          width: 100%;
+          text-align: center;
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 40px;
+          letter-spacing: -0.015em;
+      }
+  }
+  .arrows-container .text {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 40px;
+      text-align: center;
+      letter-spacing: -0.015em;
+      text-transform: uppercase;
+  }
+}
+#identifiez-vous {
+  position: relative;
+  .img1-cake {
+      position: absolute;
+      right: 60.7%;
+      top: 12.74%;
+      bottom: 77.29%;
+  }
+
+  .img2-sac {
+      position: absolute;
+      left: 3.2%;
+      right: 66.79%;
+      top: 68.63%;
+      bottom: 14.62%;
+      transform: rotate(-10.63deg);
+  }
+  .img3-cake {
+      position: absolute;
+       right: 0;
+      top: 79.87%;
+      bottom: 12.95%;
+  }
+}
+#que-preferez-vous {
+  padding: 10vh 0;
+  .btn-validation {
+      margin: 8vh auto;
+      width: 205px;
+      height: 44px;
+      button {
+          background: #a7aef9;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          border-radius: 30px;
+          width: 100%;
+          height: 100%;
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 40px;
+          text-align: center;
+          letter-spacing: -0.015em;
+          border: none;
+      }
+  }
+}
+#commande-validée {
+  background-image: url("https://i.ibb.co/x1kXK3x/backg-1-5.png");
+  position: relative;
+  padding: 0;
+  .notification {
+      background: rgba(255, 249, 240, 0.3);
+      box-shadow: 0px 12px 40px -16px rgba(0, 0, 0, 0.1);
+      border-radius: 30px;
+      .message {
+          position: absolute;
+          left: 17.87%;
+          right: 33.33%;
+          top: 15.14%;
+          bottom: 82.31%;
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 17px;
+          line-height: 94.8%;
+      }
+      .panier {
+          position: absolute;
+          left: 77.33%;
+          right: 17.33%;
+          top: 15.29%;
+          bottom: 81.71%;
+      }
+      .number {
+          position: absolute;
+          left: 82.67%;
+          right: 12.8%;
+          top: 13.04%;
+          bottom: 84.41%;
+          background: #ec2633;
+          box-shadow: 0px 2px 23px 1px rgba(255, 51, 52, 0.72);
+          border-radius: 50%;
+          color: white;
+          text-align: center;
+      }
+  }
+  .delivery {
+      position: absolute;
+      width: 253px;
+      height: 211.17px;
+      left: 46px;
+      top: 221px;
+  }
+  .thank-u {
+      position: absolute;
+      left: 14.93%;
+      right: 14.93%;
+      top: 75.11%;
+      bottom: 18.74%;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 40px;
+      text-align: center;
+      letter-spacing: -0.015em;
+  }
+}

@@ -1,36 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
-import Slide from './Slide.js';
+import logo from "./logo.svg";
+import "./App.scss";
+import Slide from "./Slide.js";
 const slides = [
   {
-    city: 'Paris',
-    country: 'France',
-    img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/paris.jpg',
+    city: "Paris",
+    country: "France",
+    img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/paris.jpg",
   },
   {
-    city: 'Singapore',
-    img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/singapore.jpg',
+    city: "Singapore",
+    img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/singapore.jpg",
   },
   {
-    city: 'Prague',
-    country: 'Czech Republic',
-    img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/prague.jpg',
+    city: "Prague",
+    country: "Czech Republic",
+    img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/prague.jpg",
   },
   {
-    city: 'Amsterdam',
-    country: 'Netherlands',
-    img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/amsterdam.jpg',
+    city: "Amsterdam",
+    country: "Netherlands",
+    img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/amsterdam.jpg",
   },
   {
-    city: 'Moscow',
-    country: 'Russia',
-    img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/moscow.jpg',
+    city: "Moscow",
+    country: "Russia",
+    img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/moscow.jpg",
   },
 ];
 function App() {
   return (
     <div className="App">
-      <Slide slides = {slides}/>
+      <Slide slides={slides} />
     </div>
   );
 }
